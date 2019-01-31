@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link href="https://i.cdn.turner.com/nba/nba/.element/media/2.0/teamsites/spurs/Schad/css/bootstrap.css"
+          rel="stylesheet">
+    <link href="https://i.cdn.turner.com/nba/nba/.element/media/2.0/teamsites/spurs/Schad/css/slider.css"
+          rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://www.nba.com/.element/media/2.0/teamsites/spurs/Schad/css/salute-css.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.js"></script>
+    <script src="https://i.cdn.turner.com/nba/nba/.element/media/2.0/teamsites/spurs/Schad/js/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.3.1.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
+    <script> var jqo = jQuery; </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script> jQuery = jqo;</script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-4027458-2', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            sa
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window,
+            document, 'script', '//connect.facebook.net/en_US/fbevents.js');
+
+        fbq('init', '157056997967046');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=157056997967046&ev=PageView&noscript=1"
+    /></noscript>
+
+    <style>
+
+
+        .plan {
+            background-color: #fff;
+            padding: 3em;
+            margin-bottom: 2em;
+        }
+
+        .plan2 {
+            background-color: #fff;
+            padding: 3em;
+        }
+
+        .gamerow {
+            padding: 1em 0;
+            vertical-align: middle;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .logoimg img {
+            max-width: 40px;
+        }
+
+        .header1 {
+            background-color: #333;
+            padding: .1em 0 1em 0;
+            text-align: center;
+        }
+
+        .header2 {
+            background-color: #AF0002;
+            padding: 2em;
+            margin: -3em -3em 1em -3em;
+            text-align: center;
+        }
+
+        .header3 {
+            background-color: #ddd;
+            padding: 2em;
+            margin: -3em -3em 1em -3em;
+            text-align: center;
+        }
+
+        .date, .day, .time {
+            padding: 5px 0;
+        }
+
+        .purchase {
+            margin: 0em -3em -3em -3em;
+        }
+
+        .purchase .btn {
+            width: 100%;
+            padding: 2em 0;
+            border-radius: 0;
+            font-weight: bold;
+        }
+
+        @media (min-width: 990px) {
+            .plan {
+                border-right: 1px solid #bbb;
+            }
+
+            .column1 {
+                border-right: 1px solid #ddd;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .opponent {
+                padding: 1.4em 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .opponent {
+                display: none;
+            }
+        }
+
+        .theme {
+            text-align: center;
+            padding-bottom: 1em;
+        }
+
+        .btn-success {
+            padding: 1em;
+        }
+
+        .nbaCvpWrapper {
+            background-color: #000;
+        }
+
+        .yepCirc {
+            max-width: 310px;
+        }
+
+        .yepStuff {
+            width: 100%;
+        }
+
+        .row.whiteText {
+            padding-bottom: 55px;
+        }
+
+        .hideText {
+            text-align: center;
+        }
+
+        .big {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .padHighlights {
+            background: url("https://spursdotcom.com/1_chris/salute-2014-15/images/gray_sand.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+            margin-bottom: 20px;
+            padding-bottom: 28px;
+            padding-top: 28px;
+        }
+
+        .col-xs-12.padHighlights > h2 {
+            text-align: center !important;
+        }
+
+        .white {
+            color: #fff;
+            -webkit-box-shadow: 4px 4px 25px -5px #171717;
+            -moz-box-shadow: 4px 4px 25px -5px #171717;
+            box-shadow: 4px 4px 25px -5px #171717;
+            background: #171717;
+            margin-right: 250px;
+            float: none;
+            clear: none;
+        }
+
+        .navbar-toggle .icon-bar {
+            display: block;
+            width: 22px;
+            height: 2px;
+            background-color: #cccccc;
+            border-radius: 1px;
+        }
+
+        .aaa > img {
+            max-width: 110px;
+        }
+
+        .noGamesListBackground {
+            background: none repeat scroll 0 0 #fff !important;
+            box-shadow: none !important;
+            padding: 5% !important;
+        }
+
+        .filter-option {
+            float: left;
+            margin-right: 20px;
+        }
+
+        #games-containerRamp > ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .maximg-side img {
+            max-width: 300px;
+        }
+
+        .whiteFont a {
+            color: #fff !important;
+            font-weight: bold;
+        }
+
+        .whiteFont a:visited {
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .whiteFont a:hover {
+            color: #fff !important;
+            font-weight: bold;
+        }
+
+        .whiteFont {
+            padding: 7px;
+            background-image: url("https://i.cdn.turner.com/drp/nba/spurs/sites/default/files/bg-sponsors.png");
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+        }
+
+        .text-center > div {
+            max-width: 728px;
+            margin: 10px auto;
+        }
+
+        .noGamesListBackground a {
+            font-weight: bold;
+            color: #272727 !important;
+        }
+
+        .slideRow {
+            color: #000 !important;
+        }
+
+        .btn {
+            margin-top: 0;
+        }
+
+        .spurstitles {
+            font-family: 'Open Sans Condensed', sans-serif !important;
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .hiddenTextSmall {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        .title-panels {
+            font-size: 30px;
+            font-weight: bold;
+            color: #fff;
+            margin-left: 1em;
+        }
+
+        .salutenights {
+            padding-top: 10px;
+            background: #f1f1f1;
+            border-top: 1px solid #ccc;
+            box-shadow: 0 10px 11px -1px rgba(48, 32, 18, 0.21) !important;
+        }
+
+        .btn.btn-warning.btn-sm {
+            background: #28a745;
+            color: #ffffff;
+            border: 1px solid #43952A !important;
+        }
+
+        .btn.btn-warning.btn-sm {
+
+            color: #ffffff !important;
+        }
+
+        .noGamesListBackground a {
+            font-weight: bold;
+            color: #fff !important;
+        }
+
+        .btn-success {
+            background-color: #28a745;
+            color: #ffffff;
+            border: 1px solid #43952A !important;
+        }
+        .smallerMargin{
+            margin: 0 0 5px 0!important;
+        }
+    </style>
+    <title>Title</title>
+</head>
+<body>
+
+
+
+<div class="container-fluid noPadding bgNavNav">
+    <!--top ad-->
+    <div class="text-center">
+        <div>
+
+            <!--===///ad top\\\===-->
+            <script type='text/javascript'>
+                var googletag = googletag || {};
+                googletag.cmd = googletag.cmd || [];
+                (function () {
+                    var gads = document.createElement('script');
+                    gads.async = true;
+                    gads.type = 'text/javascript';
+                    var useSSL = 'https:' == document.location.protocol;
+                    gads.src = (useSSL ? 'https:' : 'https:') +
+                        '//www.googletagservices.com/tag/js/gpt.js';
+                    var node = document.getElementsByTagName('script')[0];
+                    node.parentNode.insertBefore(gads, node);
+                })();
+            </script>
+
+            <script type='text/javascript'>
+                googletag.cmd.push(function () {
+                    googletag.defineSlot('/2117/spurs_desktop_1024px/salute_top_728x90', [728, 90], 'div-gpt-ad-1416599833513-0').addService(googletag.pubads());
+                    googletag.pubads().enableSingleRequest();
+                    googletag.enableServices();
+                });
+            </script>
+
+            <!-- spurs_desktop_1024px/salute_top_728x90 -->
+            <div id='div-gpt-ad-1416599833513-0' style='width:728px; height:90px;'>
+                <script type='text/javascript'>
+                    googletag.cmd.push(function () {
+                        googletag.display('div-gpt-ad-1416599833513-0');
+                    });
+                </script>
+            </div>
+            <!--==//ad top\\==-->
+
+        </div>
+    </div>
+    <!--top ad-->
+    <!--button nav-->
+    <div class="navContain container">
+
+
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <nav id="site-navigation" class="collapse navbar-collapse" role="navigation" style="padding:0;">
+
+
+            <div class="collapse navbar-collapse" style="padding:0;">
+
+                <ul class="nav nav-justified">
+
+                    <li><a href="https://www.nba.com/spurs/spurs-salute-photo-submission" target="_blank">Upload Fan
+                        Photos</a></li>
+                    <li><a href="https://www.facebook.com/USAA" target="_blank">Share your Salute (Facebook)</a></li>
+                    <li><a href="https://twitter.com/usaa" target="_blank">Share your Salute (Twitter)</a></li>
+                    <li><a href="https://www.spurs.com" target="_blank">Back to Spurs.com</a></li>
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </div>
+</div>
+
+
+<div class="row-fluid slideRow">
+
+    <div class="mask">
+        <div class="container text-center noPaddingSmall" style="position:relative; padding-bottom:20px;">
+            <div class="aaa">
+                <img src="https://i.cdn.turner.com/drp/nba/spurs/sites/default/files/power-govx-2.png">
+            </div>
+            <div class="col-md-6 col-sm-12 box effect8">
+                <div class="logo">
+                    <img src="https://www.nba.com/.element/media/2.0/teamsites/spurs/Rosalie/img/spurs/SpursSalute.png">
+                </div>
+                <div class="headline text-center">
+                    <h1 style="color:#fff !important; margin-top:0; width:80%; margin:0 auto; ">Thank you for your service.
+                        We salute you with the following discounts presented by USAA.</h1>
+                </div>
+            </div>
+
+            <!--Video visible on larger screens only-->
+            <div class="col-md-6 visible-sm visible-xs- visible-md visible-lg paddingTopBottomMinBott container noPaddingSmall">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <script class="_nbaVideoPlayerScout" data-team="spurs"
+                                    data-videoId="/video/teams/spurs/2018/03/07/1971879/1520456436283-YogaWarriors-1971879"
+                                    data-width="768" data-height="732"
+                                    src="https://www.nba.com/scout/team/cvp/videoPlayerScout.js"></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--End of video div-->
+    <div class="row bgGrain">
+        <div class="col-lg-12 backgroundWhite" style="position:relative">
+            <div class="bgPatternCamo">
+                <div class="container paddingAround noPaddingSmall">
+                    <div class="col-lg-12">
+
+                        <div class="col-sm-12 col-xs-12 padHighlights">
+                            <div class="spiel">All Military and Veterans save up to 40% on Salute Night tickets.<br>15%
+                                off at the Spurs Fan Shop on USAA Salute Nights with a Military I.D.
+                            </div>
+                            <li class="all-orientations all-months all-days all-opponents">
+                                <div class="" style="background-color: #272727; border-top: 0!important; margin-top:15px;">
+                                    <div class="row" style="text-align:center">
+                                        <h1 class="title-panels">Donation Drive Information</h1>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="salutenights clearfix">
+                                    <div class="col-xs-12 pull-left text-center">
+
+                                            <div class="col-sm-6 spurstitles text-center ">
+                                                <p style="border:solid #272727 2px; padding:10px; ">
+                                                Donations will be accepted at all AT&T Center ticket entrances
+                                                </p>
+                                            </div>
+
+
+
+
+                                            <div class="col-sm-6 spurstitles text-center ">
+                                            <p style="border: solid #272727 2px; padding:10px; ">
+
+                                                No aerosol cans or liquid containers larger than 2 oz will be accepted
+                                            </p>
+                                            </div>
+
+                                </div>
+                                    <br>
+                                    <br>
+                                    <br>
+<br>
+
+<div style="text-align: center">
+    <h1 style="font-size:22px;">
+        Please only bring the specific items listed below
+    </h1>
+</div>
+                                    <br>
+
+
+                                <div class="col-xs-12 pull-left text-center" style="margin-bottom: 20px;">
+                                    <div class="col-sm-6 spurstitles text-center" style="margin: 0;">
+                                        <p class="smallerMargin">Disposable Razors</p>
+                                        <p class="smallerMargin">Shower or Body Wipes</p>
+
+                                        <p class="smallerMargin">Travel Size Deodorant (0.5oz)</p>
+
+                                        <p class="smallerMargin">Travel Size Hand Sanitizer (2oz)</p>
+
+
+                                    </div>
+
+                                    <div class="col-sm-6 spurstitles text-center" style="margin: 0;">
+                                        <p class="smallerMargin">Travel Size Lotion (1oz)</p>
+                                        <p class="smallerMargin">Travel Size Mouthwash (1.2oz)</p>
+
+                                        <p class="smallerMargin">Travel Size Nail Clippers/Emery Boards(0.5oz) </p>
+
+                                        <p class="smallerMargin">Gallon Size Freezer Bags (for items)</p>
+
+
+                                    </div>
+                                </div>
+                                </div>
+
+
+
+                            </li>
+                            <h4 class="hideText" style="color:#fff;text-indent:20px;margin:1em 0;">Select your
+                                team below.</h4>
+
+                            <div class="m1 menu showTextDropdown">
+                                <div id="menu-center">
+                                    <ul>
+                                        <h3 style="margin:0; padding:0;" class="mobileFixedNavigation">Quick
+                                            browse navigation:</h3>
+                                        <li><a href="#spurs">Spurs</a></li>
+                                        <li><a href="#rampage">Rampage</a></li>
+                                        <li><a href="#stars">Stars</a></li>
+                                        <li><a href="#toros">Austin Spurs</a></li>
+                                        <li><a href="#safc">San Antonio FC</a></li>
+                                        <li><a href="#rockfest">Rockfest</a></li>
+                                        <li><a href="#circue">AT&T Center</a></li>
+                                        <!--<li><a href="#gym">Kellogg's Tour of Gymnastics Champions</a></li>-->
+                                        <!--<li><a href="#attcenterevents">AT&T Events</a></li>
+                                        <li><a href="#arenatours">Arena Tours</a></li> -->
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <a name="one"></a>
+                            <a name="two"></a>
+                            <a name="three"></a>
+                            <a name="four"></a>
+                            <a name="five"></a>
+                            <a name="six"></a>
+                            <a name="seven"></a>
+                            <a name="eight"></a>
+
+
+
+
+                            <li class="all-orientations all-months all-days all-opponents">
+                                <div class="" style="background-color:#272727; border-top: 0 !important;">
+                                    <div class="row" style="text-align: center">
+                                        <h1 class="title-panels">USAA SALUTE NIGHTS</h1>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="all-orientations all-months all-days all-opponents">
+                                <div class="salutenights clearfix">
+                                    <div class="col-xs-5 pull-left text-center">
+                                        <div class="row">
+                                            <div class="col-sm-4 bigBold text-center borderRight">
+
+                                                11/10
+
+                                            </div>
+                                            <div class="col-sm-8 borderRight">
+                                                <div class="row spurstitles" style="text-transform:uppercase">
+
+                                                    Saturday
+                                                    <br>
+                                                    7:30 PM
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-5  pull-left text-center borderRight">
+                                        <div class="col-sm-6 col-md-4 col-lg-6 noPadding">
+
+                                            <img src="https://i.cdn.turner.com/nba/nba/.element/media/2.0/teamsites/spurs/Schad/img/PostgameTeams/HOU.png">
+
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-lg-6">
+                                            <div class="row spurstitles">
+
+
+                                                Houston Rockets
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-xs-12 pull-left text-center">
+                                        <div class="buyButton">
+
+                                            <a class="btn btn-warning btn-sm blackBtn"
+                                               href="https://www.nba.com/spurs/gallery/photos-spurs-vs-rockets-11/10"
+                                               target="_blank">View Photos</a></div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="all-orientations all-months all-days all-opponents">
+                                <div class="salutenights clearfix">
+                                    <div class="col-xs-5 pull-left text-center">
+                                        <div class="row">
+                                            <div class="col-sm-4 bigBold text-center borderRight">
+
+                                                01/27
+
+                                            </div>
+                                            <div class="col-sm-8 borderRight">
+                                                <div class="row spurstitles" style="text-transform:uppercase">
+
+                                                    Sunday
+                                                    <br>
+                                                    6:00 PM
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-5  pull-left text-center borderRight">
+                                        <div class="col-sm-6 col-md-4 col-lg-6 noPadding">
+
+                                            <img src="https://i.cdn.turner.com/nba/nba/.element/img/1.0/teamsites/logos/teamlogos_80x64/was.gif">
+
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-lg-6">
+                                            <div class="row spurstitles">
+
+
+                                                Washington Wizards
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-xs-12 pull-left text-center">
+                                        <div class="buyButton">
+
+                                            <a class="btn btn-warning btn-sm blackBtn"
+                                               href="https://auth.govx.com/tickets/verify/93ab1652-cf9c-e811-80e7-14187735bc96/ba3a73fc-cf9c-e811-80e7-14187735bc96?display=full"
+                                               target="_blank">Tickets</a></div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="all-orientations all-months all-days all-opponents">
+                                <div class="salutenights clearfix">
+                                    <div class="col-xs-5 pull-left text-center">
+                                        <div class="row">
+                                            <div class="col-sm-4 bigBold text-center borderRight">
+
+                                                03/20
+
+                                            </div>
+                                            <div class="col-sm-8 borderRight">
+                                                <div class="row spurstitles" style="text-transform:uppercase">
+
+                                                    Wednesday
+                                                    <br>
+                                                    7:30 PM
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-5  pull-left text-center borderRight">
+                                        <div class="col-sm-6 col-md-4 col-lg-6 noPadding">
+
+                                            <img src="https://i.cdn.turner.com/nba/nba/.element/img/1.0/teamsites/logos/teamlogos_80x64/mia.gif">
+
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-lg-6">
+                                            <div class="row spurstitles">
+
+
+                                                Miami Heat
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-xs-12 pull-left text-center">
+                                        <div class="buyButton">
+
+                                            <a class="btn btn-warning btn-sm blackBtn"
+                                               href="https://auth.govx.com/tickets/verify/93ab1652-cf9c-e811-80e7-14187735bc96/cb776a02-d09c-e811-80e7-14187735bc96?display=full"
+                                               target="_blank">Tickets</a></div>
+                                    </div>
+                                </div>
+                            </li>
+
+
+                            <div id="second" class="gamesContainer">
+                                <div class="panel-group" id="accordion">
+
+                                    <div class="panel panel-default" id="spurs">
+                                        <div class="panel-heading">
+                                            <a name="spurs"></a>
+                                            <h4 class="panel-title centerSmall collapsed" data-toggle="collapse"
+                                                data-target="#collapseOne">
+                                                <img src="https://i.cdn.turner.com/nba/nba/.element/media/2.0/teamsites/spurs/Schad/img/spurs80x64.png"/>
+                                                <span class="newLine"></span><span class="hiddenTextSmall">Spurs Discounts (+)</span>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse expandSmall">
+                                            <div class="panel-body noGamesListBackground">
+                                                <li class="all-orientations all-months all-days all-opponents">
+                                                    <div class=""
+                                                         style="background-color:#272727; border-top: 0 !important;">
+                                                        <div class="row" style="text-align: center">
+                                                            <h1 class="title-panels">REGULAR SEASON</h1>
+                                                        </div>
+                                                    </div>
+
+                                                </li>
+                                                <div id="inputContent"></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!--Start of SAFC div-->
+                                    <div class="panel panel-default" id="safc">
+                                        <div class="panel-heading">
+                                            <a name="safc"></a>
+                                            <h4 class="panel-title centerSmall  collapsed"
+                                                data-toggle="collapse"
+                                                data-target="#collapse4">
+                                                <img src="https://i.cdn.turner.com/nba/nba/.element/media/2.0/teamsites/spurs/Schad/img/USLSA/SAFCmilitary.png"/>
+                                                <span class="newLine"></span><span class="hiddenTextSmall">SAFC Discounts (+)</span>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse4" class="panel-collapse collapse expandSmall">
+                                            <div class="panel-body noGamesListBackground">
+                                                <div class="games clearfix">
+                                                    <h3> Check back soon for next season's schedule</h3>
+                                                </div>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!--Start Rampage div-->
+                                    <div class="panel panel-default" id="rampage">
+                                        <div class="panel-heading">
+                                            <a name="rampage"></a>
+                                            <h4 class="panel-title centerSmall  collapsed"
+                                                data-toggle="collapse"
+                                                data-target="#collapseTwo">
+                                                <img src="https://i.cdn.turner.com/nba/nba/.element/media/2.0/teamsites/spurs/Schad/img/rampage80x64.png"/>
+                                                <span class="newLine"></span><span class="hiddenTextSmall">Rampage Discounts (+)</span>
+                                            </h4>
+                                        </div>
+
+                                        <div id="collapseTwo" class="panel-collapse collapse expandSmall">
+                                            <div class="panel-body noGamesListBackground">
+
+
+                                                <!--START GAMES -->
+                                                
+
+                                                <div id="rampageInput"></div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--End of Rampage div-->
+
+
+                                    <!-- AT&T Center Panel -->
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <a name="attcenterevents"></a>
+                                            <h4 class="panel-title centerSmall  collapsed"
+                                                data-toggle="collapse"
+                                                data-target="#collapseSeven">
+                                                <img src="https://i.cdn.turner.com/nba/nba/.element/media/2.0/teamsites/spurs/Schad/img/ATT/attlogosmall.png"/>
+                                                <span class="newLine"></span><span class="hiddenTextSmall">AT&T Center Events (+)</span>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseSeven" class="panel-collapse collapse expandSmall">
+                                            <div class="panel-body noGamesListBackground">
+
+
+                                                Check back for AT&T Center discounts
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--End of AT&T Spurs-->
+
+                                    <!-- Austin Spurs Panel -->
+                                    <div class="panel panel-default" id="toros">
+                                        <div class="panel-heading">
+                                            <a name="toros"></a>
+                                            <h4 class="panel-title centerSmall  collapsed"
+                                                data-toggle="collapse"
+                                                data-target="#collapseFour">
+                                                <img src="http://www.nba.com/.element/media/2.0/teamsites/spurs/Rosalie/img/spurs/austin-spurs-logo.png"
+                                                     width="70.523415" height="64"/> <span
+                                                    class="newLine"></span><span class="hiddenTextSmall">Austin Spurs Discounts (+)</span>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseFour" class="panel-collapse collapse expandSmall">
+                                            <div class="panel-body noGamesListBackground">
+
+                                                <p>We offer a military discount for every home game. Check back
+                                                    in the Fall for the Austin Spurs full schedule and
+                                                    pricing.</p>
+                                            </div>
+
+
+                                            <!--<li class="Charlotte Wed Nov all-orientations all-months all-days all-opponents">
+
+                                                <div class="games clearfix">
+
+                                                                    <div class="col-xs-5 pull-left text-center">
+                                                                    <div class="row">
+                                                                      <div class="col-sm-4 bigBold text-center borderRight">
+                                                                        <div class="texta">Dec</div>
+                                                                         29th
+                                                                       </div>
+                                                                        <div class="col-sm-8 borderRight">
+                                                                            <div class="row">Tuesday</div>
+                                                                            <div class="row">7:30PM</div>
+                                                                        </div>
+                                                                    </div>
+                                                                    </div>
+
+                                                                    <div class="col-xs-5  pull-left text-center borderRight">
+                                                                    <div class="col-sm-6 col-md-4 col-lg-6 noPadding"><img src="https://spursdotcom.com/1_Quincy/warriors.png"></div>
+                                                                    <div class="col-sm-6 col-md-4 col-lg-6">
+                                                                        <div class="row">Santa Cruz</div>
+                                                                        <div class="row">Warriors</div>
+                                                                    </div>
+                                                                    </div>
+
+                                                                    <div class="col-md-2 col-xs-12 pull-left text-center">
+                                                                    <div class="buyButton">
+                                                                        <p><a class="btn btn-warning btn-sm blackBtn" href="https://tickets.govx.com/verify/toros?exid=ESPUR122916
+                                                " target="_blank">Buy Now</a>
+                                                                    </p>
+                                                                    </div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                </li>
+                                        </div>
+                                    </div>
+                                    <!--End of Austin Spurs-->
+
+
+                                        </div>
+                                    </div>
+
+                                    <!-- Globetrotter Panel -->
+                                    <div class="panel panel-default" id="gym">
+                                        <div class="panel-heading">
+                                            <a name="gym"></a>
+                                            <h4 class="panel-title centerSmall  collapsed"
+                                                data-toggle="collapse"
+                                                data-target="#collapse5">
+                                                <img src="https://i.cdn.turner.com/nba/nba/.element/media/2.0/teamsites/spurs/Schad/img/Spurs/Salute/HGsmall.jpg"
+                                                     style="padding:5px 0;"/> <span class="newLine"></span>
+                                                <span class="hiddenTextSmall">Harlem Globetrotters (+)</span>
+                                            </h4>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse5" class="panel-collapse collapse expandSmall">
+                                            <div class="panel-body noGamesListBackground">
+
+                                                <div style="max-width:600px;">
+
+
+                                                    <p>The 2019 Harlem Globetrotters World Tour will soon
+                                                        announce dates for a San Antonio show. We’ll have the
+                                                        military discounted posted on this site ASAP after the
+                                                        press release</p></div>
+
+
+                                                <!--<p><strong>Offer Code: MILITARY</strong></p>
+
+                                                <div class="col-xs-12 pull-left text-center"><div class="buyButton">
+                                                <a class="btn btn-warning btn-sm blackBtn" href="https://spursgroups.com/globetrottersmilitary" target="_blank">Buy Now</a></div></div>-->
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="accessNotes">
+                                        <!--<p><img src="https://i.cdn.turner.com/dr/nba/teamsites-nbateams/release/spurs/sites/spurs/files/content/images-gallery/2013/03/untitled.jpg?1363293284" style="padding-right: 7px;padding-bottom: 7px;">For accessible seating, please contact Service Innovation M-F from 9am-5pm at 210-444-5140 or serviceinnovation@attcenter.com</p>-->
+                                        <p>
+                                            <strong>Questions? Email Britni Ridolfi at <a
+                                                    href="mailto:bridolfi@attcenter.com">bridolfi@attcenter.com</a></strong>
+                                        </p>
+                                    </div>
+
+
+
+
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <script>
+
+                var $j = jQuery.noConflict();
+                console.log("Before function");
+                $j(document).ready(function($) {
+
+
+                    $.ajaxSetup({cache: false});
+                    $.getJSON("https://www.nba.com/.element/media/2.0/teamsites/spurs/Rosalie/salute-data.json",
+
+                        function makeBannerInfo(data) {
+                            console.log("after Json call");
+
+                            var gameInfo = data.gscd.g;
+
+                            gameInfo.forEach(function (content, i) {
+
+
+                                var gameDate = content.gdte;
+                                var dateFomatted = gameDate.substring(5, 7) + "/" + gameDate.substring(8, 10);
+                                var gameTime = content.htm;
+                                var gameTime2 = content.htm;
+                                var gameTimeFormatted = gameTime.substring(11, 13);
+                                var gameTimeMinutesString = gameTime2.substring(14, 16);
+                                var gameTimeNumber = parseInt(gameTimeFormatted - 12);
+                                var opponentInfo = content.v;
+                                var opponentName = content.v.tn;
+                                var opponentCity = content.v.tc;
+
+                                var urlLogo = content.v.ta;
+                                var homeGame = content.an;
+                                var awayGame = content.h.ta;
+                                var markup = '';
+                                var dayOfWeek = new Date(gameTime2);
+                                var day1 = dayOfWeek.getDay();
+
+                                var today = new Date();
+                                var mm = today.getMonth() + 1;
+                                var dd = today.getDate();
+                                var yyyy = today.getFullYear();
+                                var date = new Date(yyyy, mm, dd);
+
+                                var gameScheduleDate = new Date(gameTime);
+                                var weekday = new Array(7);
+                                weekday[0] = "SUNDAY";
+                                weekday[1] = "MONDAY";
+                                weekday [2] = "TUESDAY";
+                                weekday [3] = "WEDNESDAY";
+                                weekday [4] = "THURSDAY";
+                                weekday [5] = "FRIDAY";
+                                weekday [6] = "SATURDAY";
+
+                                var inputDate = weekday[day1];
+                                var opponentInHomeCity = content.h.tc;
+                                var opponentHomeTeam = content.h.tn;
+                                var opponentFullAtHome = opponentInHomeCity + " " + opponentHomeTeam;
+                                var opponentAtHomeLogo = content.h.ta;
+                                var awayStadium = content.an;
+                                var timeAway = content.vtm;
+                                var awayTimeFormatted = timeAway.substring(11, 13);
+                                var awayTimeNumber = parseInt(awayTimeFormatted - 12);
+
+                                var broadcastHome = content.bd.b[0].scope;
+                                var homeChannel = content.bd.b[0].disp;
+                                var homeChannel2 = content.bd.b[1].disp;
+
+                                var awayChannel1 = content.bd.b[0].disp;
+                                var awayChannel2 = content.bd.b[1].disp;
+                                //var awayChannel3 = content.bd.b[2].disp;
+                                var broadcastAway = content.bd.b[0].scope;
+                                var infoFromTicketJson = content.link;
+
+
+                                if (today < gameScheduleDate) {
+                                    if (homeGame == "AT&T Center") {
+
+
+                                        markup += "<li class='all-orientations all-months all-days all-opponents'>";
+                                        markup += "<div class='games clearfix'>";
+                                        markup += "<div class='col-xs-5 pull-left text-center'>";
+                                        markup += "<div class='row'>";
+                                        markup += "<div class='col-sm-4 bigBold text-center borderRight'>";
+                                        markup += dateFomatted;
+
+                                        markup += "</div>";
+                                        markup += "<div class='col-sm-8 borderRight'>";
+                                        markup += "<div class='row spurstitles' style='text-transform:uppercase'>";
+                                        markup += inputDate + "<br>" + gameTimeNumber + ':' + gameTimeMinutesString + "PM";
+                                        markup += "</div>";
+                                        markup += "</div>";
+                                        markup += '</div>';
+                                        markup += "</div>";
+                                        markup += "<div class='col-xs-5  pull-left text-center borderRight'>";
+                                        markup += "<div class='col-sm-6 col-md-4 col-lg-6 noPadding'>";
+                                        markup += '<img class="logoImage" src="https://www.nba.com/.element/media/2.0/teamsites/spurs/Rosalie/img/nba-logos/' +urlLogo +'.gif" width="60px" height="60px">';
+
+                                        markup += "</div>";
+                                        markup += "<div class='col-sm-6 col-md-4 col-lg-6'>";
+                                        markup += "<div class='row spurstitles'>";
+                                        markup += opponentCity + " " + opponentName;
+                                        markup += "</div>";
+                                        markup += "</div>";
+
+                                        markup += "</div>";
+
+                                        markup += "<div class='col-md-2 col-xs-12 pull-left text-center'>";
+                                        markup += "<div class='buyButton'>";
+                                        markup += "<a class='btn btn-warning btn-sm blackBtn' target='_blank' href=" + '"' + infoFromTicketJson + '"' + ">";
+                                        markup += "Tickets";
+                                        markup += "</a>";
+                                        markup += "</div>";
+                                        markup += "</div>";
+                                        markup += "</div>";
+                                        markup += "</li>";
+                                        $("#inputContent").append(markup)
+
+
+
+
+                                    }
+                                }
+                            });
+
+                        });
+
+                });
+
+            </script>
+
+
+            <script>
+
+                // Function for Rampage schedule
+
+                var $j= jQuery.noConflict();
+                console.log("Rosalie");
+                $j(document).ready(function($) {
+
+                    console.log("before JSON");
+                    $.ajaxSetup({cache:false});
+                    $.getJSON("https://www.nba.com/.element/media/2.0/teamsites/spurs/Rosalie/rampage.json",
+
+                        function loadRampageInfo(data){
+                            console.log("11111111");
+                            var rampageInformation = data;
+                            var scheduleInfo = data.SiteKit.Schedule;
+
+                            scheduleInfo.forEach(function(content, i){
+                                var gameDateEach = content.date_time_played;
+                                var today = new Date();
+                                var homegame = content.home_team_city;
+                                var formattedDate = gameDateEach.substring(11,13);
+                                var gameHour = content.scheduled_time.substring(0,7);
+                                var gameScheduleDate1 = new Date(gameDateEach);
+                                var dateDays = gameDateEach.substring(8,10);
+                                console.log(dateDays);
+                                var minuteSting = gameDateEach.substring(14,16);
+                                var opponentInfo = content.visiting_team_name;
+                                var opponentCode = content.visiting_team_code;
+                                var ticketlink = content.tickets_url;
+
+                                var dayOfWeek1 = new Date(gameDateEach);
+                                var day1 = dayOfWeek1.getDay();
+
+                                var weekday = new Array(7);
+                                weekday[0] = "SUNDAY";
+                                weekday[1] = "MONDAY";
+                                weekday[2] = "TUESDAY";
+                                weekday[3] = "WEDNESDAY";
+                                weekday[4] = "THURSDAY";
+                                weekday[5] = "FRIDAY";
+                                weekday[6] = "SATURDAY";
+
+                                var inputDate1 = weekday[day1];
+
+                                var monthName = new Array(12);
+                                monthName [0] = "January";
+                                monthName [1] = "February";
+                                monthName[2] = "March";
+                                monthName[3] = "April";
+                                monthName[4] = "May";
+                                monthName[5] = "June";
+                                monthName[6] = "July";
+                                monthName[7] = "August";
+                                monthName[8] = "September";
+                                monthName[9] = "October";
+                                monthName[10] = "November";
+                                monthName[11] = "December";
+
+                                var inputMonth = monthName[day1];
+                                var correctMonth = monthName[dayOfWeek1.getMonth()];
+
+
+
+
+
+
+                                var markup = " ";
+
+                                if(today < gameScheduleDate1){
+                                    if(homegame == "San Antonio") {
+
+                                        console.log(inputMonth);
+
+                                        markup +="<div class='row gamerow home'>";
+                                        markup +="<div class='col-sm-3 col-xs-4 day'>";
+                                        markup += inputDate1+ ", " + correctMonth + " " + dateDays+ '<br>' + gameHour;
+                                        markup += "</div>";
+                                        markup += "<div class='col-sm-3 col-xs-4 logoimg'>";
+                                        markup += '<img src="http://www.nba.com/.element/media/2.0/teamsites/spurs/Rosalie/img/rampage/' + opponentCode + '.png" >';
+
+                                        markup += "</div>";
+                                        markup += "<div class='col-sm-3 opponent'>";
+                                        markup += opponentInfo;
+                                        markup += "</div>";
+                                        markup += "<div class='col-sm-3 col-xs-4'><a href="+ ticketlink + " target='_blank' class='btn btn-success'>Tickets</a>";
+                                        markup += "</div>";
+
+                                        markup += "</div>";
+
+                                        $("#rampageInput").append(markup);
+
+                                    }
+                                }
+
+                            });
+
+
+
+
+                        });
+                });
+
+
+            </script>
+            <!--End of Accordion div-->
+
+</body>
+</html>
+
+
